@@ -15,7 +15,7 @@ class ItemList extends React.Component{
         {this.props.items.map((item, index) => <Item key={index} item={item} />)}
         </tbody>
       </table>
-    );
+    )
   }
 }
 

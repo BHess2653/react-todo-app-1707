@@ -1,13 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {bindActionCreators} from 'react-redux'
+import {bindActionCreator} from 'redux'
 import {addItem} from '../../actions'
 
 class ItemBar extends React.Component{
   render(){
     return (
       <div>
-        <input type="text" ref="task" placeholder="Add item here" />
+        <input type="text" ref="item" placeholder="Add item here" />
         <button onClick={() => this.props.addItem(this.refs.item.value)}>Add Item</button>
       </div>
     );
@@ -15,7 +15,7 @@ class ItemBar extends React.Component{
 };
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({addItem}, dispatch);
+  return bindActionCreator({addItem}, dispatch);
 }
 
 export default connect(() => {}, mapDispatchToProps)(ItemBar);

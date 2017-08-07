@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Header from '../components/Header'
-import ItemBar from '../components/ItemBar'
-import ItemList from '../components/ItemList'
+import Header from '../components/header'
+import ItemBar from '../components/itembar'
+import ItemList from '../components/itemlist'
 
 class App extends Component {
   render() {

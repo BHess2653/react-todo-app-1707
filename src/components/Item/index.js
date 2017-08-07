@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {bindActionCreators} from 'redux'
+import {bindActionCreator} from 'redux'
 import {deleteItem} from '../../actions'
 
 class Item extends React.Components{
@@ -19,7 +19,7 @@ class Item extends React.Components{
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({deleteItem}, dispatch);
+  return bindActionCreator({deleteItem}, dispatch);
 }
 
 export default connect(() => {return {};}, mapDispatchToProps)(Item);
