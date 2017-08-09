@@ -6,6 +6,9 @@ const itemsReducer = (state = [], action) => {
       state = state.concat(action.payload);
       break;
 
+    case 'EDIT_ITEM':
+      break;
+
     case 'DELETE_ITEM':
       state = state.slice();
       state.splice(action.payload,1);

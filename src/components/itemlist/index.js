@@ -5,7 +5,7 @@ import Item from '../item'
 class ItemList extends React.Component{
   render(){
     return (
-      <table>
+      <table className="table table-hover">
         <thead>
           <tr>
             <th>Items</th>
