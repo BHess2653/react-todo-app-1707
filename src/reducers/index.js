@@ -3,6 +3,8 @@ import {combineReducers} from 'redux';
 const itemsReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_ITEM':
+      // copy of state = state.concat(action.payload);
+      // return your copy
       state = state.concat(action.payload);
       break;
 

@@ -13,8 +13,6 @@ class Item extends React.Component{
         </td>
         <td>
           <button onClick={() => {this.props.editItem(this.props.id)}}>Edit</button>
-        </td>
-        <td>
           <button onClick={() => {this.props.deleteItem(this.props.id)}}>Delete</button>
         </td>
       </tr>
